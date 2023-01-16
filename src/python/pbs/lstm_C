@@ -1,0 +1,8 @@
+#!/bin/tcsh
+#PBS -l mem=20gb,nodes=1:ppn=1,walltime=40:00:00
+#PBS -o /gsfs0/data/[author_blinded]/gbu/outs/out_file_lstm
+#PBS -e /gsfs0/data/[author_blinded]/gbu/outs/error_file_lstm
+module load anaconda/4.4.0-P3.6
+module load keras
+cd /gsfs0/data/[author_blinded]/gbu/src/python
+python train_lstm.py -a lstm -f $1 -o  -e $2 -b $3 -C > /gsfs0/data/[author_blinded]/gbu/outs/lstm_$1$2$3$4C.txt
