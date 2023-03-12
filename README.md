@@ -3,7 +3,7 @@
 
 >  Relevant papers: 
 >  
-> - Journal version (working): http://kokkodis.com/files/gbu.pdf    
+> - Journal version: http://kokkodis.com/files/gbu.pdf    
 > - Conference version (published, earlier work): https://dl.acm.org/doi/abs/10.1145/3219819.3219881
 
 ## Implementation of different models
